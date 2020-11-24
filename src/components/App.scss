@@ -2,22 +2,106 @@
 @import '../utils/stylesheets/variables.scss';
 
 @import '../components/Layout/Layout.scss';
+
 @import '../pages/Main/Main.scss';
+@import '../components/Banner/Banner.scss';
+@import '../components/ServiceList/ServiceList.scss';
 
-// @import '../utils/stylesheets/mixins.scss';
-
-// $icons: office,
-// secure,
-// devices;
-
-// @include generate-pseudo-icons("icon--", $icon, "../../img/icons/icon-", "png");
+@import '../utils/stylesheets/mixins.scss';
 
 html {
   font-family: $mainfont;
   font-weight: 400;
   font-size: $fontsize;
+  box-sizing: border-box;
+  font-style: normal;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  // box-sizing: inherit;
+  // margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p.discript {
+  font-size: 1.25rem;
+  max-width: 780px;
+}
+
+span.bold {
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:active,
+button:focus {
+  outline: none;
+}
+
+.button {
+  min-height: 3rem;
+  min-width: 5rem;
+  max-width: 200px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.04);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

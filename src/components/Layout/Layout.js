@@ -12,9 +12,9 @@ const Layout = ({ children }) => (
     </header>
     {children}
     <footer className="App-footer">
-      <span>
+      <h3>
         <Link to={routes.MAIN}> AppCo </Link>
-      </span>
+      </h3>
       <span> All rights reserved by ThemeTags </span>
       <span> Copyrights© 2019. </span>
     </footer>

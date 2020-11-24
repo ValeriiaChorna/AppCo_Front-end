@@ -1,3 +1,40 @@
 .banner {
-  min-height: 50%;
+  min-height: 300px;
+  max-height: 600px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 1.5rem;
+
+  &-title {
+    max-width: 600px;
+  }
+
+  &-img {
+    width: 240px;
+    max-height: 550px;
+    position: relative;
+
+    // &::after {
+    //   display: block;
+    //   position: absolute;
+    //   width: 321px;
+    //   height: 19px;
+    //   content: '';
+    //   opacity: 0.3;
+    //   background-color: black;
+    //   filter: blur(22px);
+    //   bottom: 0;
+    // }
+  }
+}
+
+.button {
+  width: 9rem;
+  background-color: white;
+
+  & a {
+    color: $maincolor;
+  }
 }

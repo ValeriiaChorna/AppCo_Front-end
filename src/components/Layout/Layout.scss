@@ -1,28 +1,53 @@
-.Layout {
-  // width: 1440px;
-  min-height: 100vh;
-  // margin: 0 auto;
-}
-
 .App {
   position: relative;
   text-align: center;
 
   &-header,
   &-footer {
-    background-color: $maincolor;
+    // background-color: $maincolor;
     color: white;
     min-height: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 1.5rem 0;
   }
 
   &-footer {
-    background-color: $secondcolor;
+    // background-color: $secondcolor;
     position: absolute;
     bottom: 0;
-    width: 99.3%;
+    max-width: 1180px;
+    min-width: 320px;
+    width: 100vw;
   }
+
+  &-header::before,
+  &-footer::before {
+    min-width: 100vw;
+    min-height: 3rem;
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: $maincolor;
+    z-index: -20;
+    padding: 1.5rem 0;
+  }
+
+  &-footer::before {
+    bottom: 0;
+    left: -50%;
+    // width: 150%;
+    width: 2500px;
+    background-color: $secondcolor;
+  }
+}
+
+.Layout {
+  // position: relative;
+  margin: 0 auto;
+  max-width: 1180px;
+  min-width: 320px;
+  min-height: 100vh;
 }

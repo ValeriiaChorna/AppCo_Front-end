@@ -2,9 +2,33 @@
   height: 100%;
 
   & .curveTopImg {
-    // position: absolute;
-    // width: 100vw;
-    height: 500px;
-    // z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 500px;
+    z-index: -10;
+  }
+
+  & .curveBottImg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    z-index: -10;
+  }
+}
+
+.service-title {
+  max-width: 780px;
+  margin: 0 auto;
+
+  & h3 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  & p {
+    color: #7e7e7e;
+    margin-bottom: 2.4rem;
   }
 }
