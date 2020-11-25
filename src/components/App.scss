@@ -7,6 +7,9 @@
 @import '../components/Banner/Banner.scss';
 @import '../components/ServiceList/ServiceList.scss';
 
+@import '../components/Navigation/Navigaton.scss';
+@import '../pages/Stats/Stats.scss';
+
 @import '../utils/stylesheets/mixins.scss';
 
 html {
@@ -60,6 +63,12 @@ p.discript {
 
 span.bold {
   font-weight: 700;
+}
+
+button {
+  display: inline-block;
+  // border: none;
+  background-color: inherit;
 }
 
 button:hover {

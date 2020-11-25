@@ -19,9 +19,12 @@ const Main = () => (
         </p>
       </div>
       <ServiceList />
-      <div className="subscribe-form">
-        <input /> <button> Subscribe </button>
-      </div>
+      <form className="subscribe-form">
+        <input type="text" placeholder="Enter your email..." />
+        <button className="button" type="submit">
+          Subscribe
+        </button>
+      </form>
     </div>
     <CurveBottom className="curveBottImg" />
   </div>

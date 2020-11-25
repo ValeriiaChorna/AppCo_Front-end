@@ -1,0 +1,24 @@
+.navigation {
+  text-align: left;
+  color: #cccccc;
+  margin: 2rem 0 3rem;
+
+  &-item {
+    display: inline;
+
+    &:not(:last-child)::after {
+      display: inline-block;
+      content: '';
+      margin: 0 0.5rem;
+      background-image: url('../../img/arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 10px;
+      height: 14px;
+    }
+  }
+
+  .active {
+    color: $maincolor;
+  }
+}

@@ -13,7 +13,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 200px;
+    height: 160px;
     z-index: -10;
   }
 }
@@ -30,5 +30,39 @@
   & p {
     color: #7e7e7e;
     margin-bottom: 2.4rem;
+  }
+}
+
+.subscribe-form {
+  // box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  min-width: 250px;
+  max-width: 580px;
+  height: 3rem;
+  margin: 0 auto;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+
+  & input {
+    // display: inline-block;
+    border: none;
+    width: 65%;
+    height: 90%;
+    padding: 0 1rem;
+  }
+
+  & input::placeholder {
+    color: #b9b9b9;
+  }
+
+  & button {
+    border: none;
+    background: $maincolor;
+    color: white;
+    width: 28%;
+    // height: 90%;
   }
 }
