@@ -1,0 +1,46 @@
+.statistic-table {
+  width: 100%;
+
+  h3 {
+    font-weight: 700;
+    text-align: left;
+  }
+
+  th {
+    background-color: $maincolor;
+    height: 3rem;
+    color: white;
+    font-weight: 400;
+
+    &:last-child {
+      border-radius: 0 10px 0 0;
+    }
+
+    &:first-child {
+      border-radius: 10px 0 0 0;
+    }
+  }
+
+  tr {
+    height: 2rem;
+    background: #fbfbfb;
+
+    &:nth-child(2n) {
+      background: #f1f1f1;
+    }
+  }
+
+  tr:last-child {
+    & td:last-child {
+      border-radius: 0 0 10px 0;
+    }
+
+    & td:first-child {
+      border-radius: 0 0 0 10px;
+    }
+  }
+
+  td {
+    min-width: 2rem;
+  }
+}

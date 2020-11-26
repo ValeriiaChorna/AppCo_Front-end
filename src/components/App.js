@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 import routes from '../routes';
 import Layout from './Layout';
-import './App.scss';
+import './main.scss';
 
 const Main = lazy(() => import('../pages/Main'));
 const Stats = lazy(() => import('../pages/Stats'));
