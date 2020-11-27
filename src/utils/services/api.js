@@ -6,8 +6,8 @@ const baseURL = 'https://app-co-backend-statistic.herokuapp.com';
 
 axios.defaults.baseURL = baseURL;
 
-const getAllStatistic = (page = 0, limit = 20) => {
-  return axios.get(`/users/statistic?page=${page}&limit=${limit}`, {
+const getAllStatistic = (page = 1, limit = 20) => {
+  return axios.get(`/users/statistic?page=${page - 1}&limit=${limit}`, {
     cancelToken: source.token,
   });
 };

@@ -1,8 +1,14 @@
 .statistic-table {
   width: 100%;
+  border-collapse: collapse;
+  text-align: left;
 
   h3 {
     font-weight: 700;
+  }
+
+  caption {
+    margin-bottom: 1.5rem;
     text-align: left;
   }
 
@@ -11,6 +17,8 @@
     height: 3rem;
     color: white;
     font-weight: 400;
+    border: 1px solid white;
+    padding: 0 1rem;
 
     &:last-child {
       border-radius: 0 10px 0 0;
@@ -40,7 +48,35 @@
     }
   }
 
+  tbody tr:hover {
+    border: 3px solid $maincolor;
+  }
+
   td {
-    min-width: 2rem;
+    min-width: 1rem;
+    padding: 0 1rem;
+    border: 1px solid white;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $maincolor;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      text-align: left;
+    }
+
+    &:nth-child(7),
+    &:nth-child(8) {
+      text-align: right;
+      padding-right: 2.4rem;
+    }
+
+    &:nth-child(8) {
+      padding-right: 4rem;
+    }
   }
 }

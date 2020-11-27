@@ -1,7 +1,7 @@
 import React from 'react';
 import StatisticTableItem from './StatisticTableItem';
 
-function StatisticTable({ items }) {
+function StatisticTable({ items, location }) {
   return (
     <>
       <table className="statistic-table">
@@ -17,7 +17,13 @@ function StatisticTable({ items }) {
         </thead>
         <tbody>
           {items.map(el => {
-            return <StatisticTableItem {...el} />;
+            return (
+              <StatisticTableItem
+                item={el}
+                location={location}
+                key={el.user_id}
+              />
+            );
           })}
         </tbody>
       </table>

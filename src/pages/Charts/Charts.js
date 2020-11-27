@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Navigation from '../../components/Navigation';
 
-const Charts = () => (
+const Charts = location => (
   <div>
-    <h1>Charts</h1>
-    <Link to="/">Home></Link>
+    <Navigation location={location} />
+    <h2> user charts </h2>
   </div>
 );
 

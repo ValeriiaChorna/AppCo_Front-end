@@ -1,7 +1,7 @@
 const routes = Object.freeze({
   MAIN: '/',
-  STATS: '/stats',
-  CHARTS: '/stats/:userId',
+  STATS: '/stats/',
+  CHARTS: '/stats/:userId/',
 });
 
 export default routes;
