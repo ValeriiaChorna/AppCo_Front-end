@@ -1,5 +1,3 @@
-// import React, { Component } from 'react';
-// import { connect } from 'react-redux';
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Navigation from '../../components/Navigation';
@@ -33,34 +31,3 @@ function Stats(location) {
 }
 
 export default Stats;
-
-// class Stats extends Component {
-//   async componentDidMount() {
-//     try {
-//       this.props.onFetchStatistic();
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   }
-
-//   render() {
-//     const { location, items } = this.props;
-//     return (
-//       <div className="statspage">
-//         <Navigation location={location} />
-//         <StatisticTable items={items} location={location} />
-//         <StatPageNav />
-//       </div>
-//     );
-//   }
-// }
-
-// const mapStateToProps = state => {
-//   return { items: staticSelectors.getStatistic() };
-// };
-
-// const mapDispatchToProps = {
-//   onFetchStatistic: statisticOperations.fetchStatistic,
-// };
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Stats);

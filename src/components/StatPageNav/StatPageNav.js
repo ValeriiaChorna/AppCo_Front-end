@@ -38,44 +38,9 @@ function StatPageNav() {
             <Arrow className="arrow" />
           </div>
         }
-      />
+      />{' '}
     </div>
   );
 }
 
 export default StatPageNav;
-
-// const StatPageNav = () => {
-//     const firstPage = 1;
-//     const numberOfvisiblePages = 5;
-//     const pageArray = Array.apply(null, Array(numberOfvisiblePages));
-
-//     const handleChange = () => {};
-//     return (
-//       <div className="statPageNav">
-//         <button type="button" className="button goBack">
-//           <Arrow />
-//         </button>
-//         <form>
-//           {pageArray.map((el, i) => {
-//             return (
-//               <label className="answerItem" key={i}>
-//                 <input
-//                   type="radio"
-//                   value={firstPage + i}
-//                   //   checked={i === selectedAnswInd}
-//                   onChange={handleChange}
-//                   className="toPageButton"
-//                   key={i}
-//                 />
-//                 {firstPage + i}
-//               </label>
-//             );
-//           })}
-//         </form>
-//         <button type="button" className="button goForth">
-//           <Arrow />
-//         </button>
-//       </div>
-//     );
-//   };
