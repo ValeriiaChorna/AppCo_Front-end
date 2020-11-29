@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import ServiceList from '../../components/ServiceList';
+
 import { ReactComponent as CurveTop } from '../../img/curve-top.svg';
 import { ReactComponent as CurveBottom } from '../../img/curve-bottom.svg';
 

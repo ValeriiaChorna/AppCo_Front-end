@@ -1,16 +1,20 @@
 .mainpage {
-  height: 100%;
+  // height: 100%;
 
   & .curveTopImg {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    max-height: 500px;
+    width: 120%;
+    max-height: 400px;
     z-index: -10;
   }
 
   & .curveBottImg {
-    position: fixed;
+    width: 120%;
+    // position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     height: 160px;

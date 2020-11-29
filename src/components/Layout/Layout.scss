@@ -1,6 +1,9 @@
 .App {
   position: relative;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 
   &-header,
   &-footer {
@@ -12,15 +15,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-  }
-
-  &-footer {
-    // background-color: $secondcolor;
-    position: absolute;
-    bottom: 0;
-    max-width: 1180px;
-    min-width: 320px;
-    width: 100vw;
   }
 
   &-header::before,
@@ -36,18 +30,14 @@
   }
 
   &-footer::before {
-    bottom: 0;
-    left: -60%;
-    // width: 150%;
-    width: 3000px;
     background-color: $secondcolor;
   }
 }
 
 .Layout {
   // position: relative;
-  margin: 0 auto;
   max-width: 1180px;
-  min-width: 320px;
+  min-width: 900px;
+  padding: 0 1.5rem;
   min-height: 100vh;
 }
