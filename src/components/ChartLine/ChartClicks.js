@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  ResponsiveContainer,
   LineChart,
   Line,
   XAxis,
@@ -37,41 +38,48 @@ export default function ChartLine({ data, Ykey }) {
 
   return (
     <div className="ChartLine">
-      <LineChart
-        width={1180}
-        height={300}
-        data={addField}
-        // margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-      >
-        <Line
-          type="basis"
-          dataKey={Ykey} //"clicks"
-          stroke="#3a80ba"
-          strokeWidth={5}
-          dot={false}
-        />
-        <XAxis
-          dataKey="formatDate"
-          tick={{
-            stroke: '#CCCCCC',
-            strokeWidth: 1,
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart
+          // width={700}
+          // height={250}
+          data={addField}
+          margin={{
+            top: 5,
+            left: 5,
+            right: 5,
+            bottom: 30,
           }}
-          tickMargin={16}
-          tickLine={false}
-          //   tickFormatter={formatXAxis}
-        />
-        <YAxis
-          tick={{
-            stroke: '#CCCCCC',
-            strokeWidth: 1,
-          }}
-          tickMargin={16}
-          axisLine={false}
-          tickLine={false}
-        />
-        <CartesianGrid vertical={false} /> <Tooltip />
-        animationDuration = {3000}
-      </LineChart>
+        >
+          <Line
+            type="basis"
+            dataKey={Ykey} //"clicks"
+            stroke="#3a80ba"
+            strokeWidth={5}
+            dot={false}
+          />
+          <XAxis
+            dataKey="formatDate"
+            tick={{
+              stroke: '#CCCCCC',
+              strokeWidth: 1,
+            }}
+            tickMargin={16}
+            tickLine={false}
+            //   tickFormatter={formatXAxis}
+          />
+          <YAxis
+            tick={{
+              stroke: '#CCCCCC',
+              strokeWidth: 1,
+            }}
+            tickMargin={16}
+            axisLine={false}
+            tickLine={false}
+          />
+          <CartesianGrid vertical={false} /> <Tooltip />
+          animationDuration = {3000}
+        </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 }
