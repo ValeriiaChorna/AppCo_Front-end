@@ -1,9 +1,22 @@
+.Layout {
+  // position: relative;
+  max-width: 1200px;
+  width: 95%;
+  min-width: 300px;
+  padding: 0 1.5rem;
+  min-height: 100%;
+
+  @media (min-width: $laptop) {
+    width: 60%;
+  }
+}
+
 .App {
   position: relative;
   text-align: center;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  // min-height: 100vh;
 
   &-header,
   &-footer {
@@ -32,12 +45,4 @@
   &-footer::before {
     background-color: $secondcolor;
   }
-}
-
-.Layout {
-  // position: relative;
-  max-width: 1180px;
-  min-width: 900px;
-  padding: 0 1.5rem;
-  min-height: 100vh;
 }

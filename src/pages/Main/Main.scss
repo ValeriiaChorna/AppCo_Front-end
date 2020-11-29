@@ -1,24 +1,22 @@
 .mainpage {
   // height: 100%;
 
-  & .curveTopImg {
-    // position: fixed;
+  & .curveTopImg,
+  & .curveBottImg {
     position: absolute;
-    top: 0;
     left: 0;
     width: 120%;
     max-height: 400px;
     z-index: -10;
   }
 
+  & .curveTopImg {
+    top: 0;
+  }
+
   & .curveBottImg {
-    width: 120%;
-    // position: fixed;
-    position: absolute;
     bottom: 0;
-    left: 0;
-    height: 160px;
-    z-index: -10;
+    max-height: 160px;
   }
 }
 
@@ -43,6 +41,7 @@
   border: 1px solid #f1f1f1;
   border-radius: 10px;
   min-width: 250px;
+  width: 80%;
   max-width: 580px;
   height: 3rem;
   margin: 0 auto;
